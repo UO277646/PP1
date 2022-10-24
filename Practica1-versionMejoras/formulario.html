@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8" />
+        <title>Formulario pagina  </title>
+        
+        <meta name="author" content="Juan Dominguez" />
+        <meta name="keywords" content="Ruby,lenguaje" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <meta name="description" content="Pagina secundaria que contiene un formulario sobre la pagina" />
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/layout.css"/>
+</head>
+<body>
+<h1>Formulario recolecta opiniones sobre la pagina web</h1>
+<nav>
+        <p>
+        <a title= "Pagina principal" tabindex="1" accesskey="T" href="index.html">Pagina principal</a>
+        </p>
+        <p>
+        <a title= "Informacion general" tabindex="2" accesskey="C" href="ifgeneral.html">Informacion general</a>
+        </p>
+        <p>
+        <a title= "Caracteristicas" tabindex="3" accesskey="D" href="caracteristicas.html">Caracteristicas</a>
+        </p>
+        <p>
+        <a title= "Formulario" tabindex="4" accesskey="P" href="formulario.html">Formulario valoracion</a>
+        </p>        
+</nav>
+
+        <form name="Opiniones">
+                <label for="num">Valoracion de la pagina web :</label> 
+                <input id="num" type="number" /><br>
+        
+                <label for="em">Introduzca su E-mail para estar atento a actualizaciones de la pagina</label> 
+                <input id="em" type="email" ><br>
+        
+                <label for="no">Nombre</label>
+                <input id="no" type="text" ><br>
+        
+                <label for="ap">Apellido</label>
+                <input id="ap" type="text" ><br>
+        
+                <label for="fc">Fecha de nacimiento</label>
+                <input id="fc" type="date"><br>
+                <fieldset>
+                    <legend>Valoracion de Ruby con respecto a otros lenguajes</legend>
+                    <p>
+                        
+                
+                <label for="mi">Parece muy intuitivo y me gustaria probarlo</label>
+                <input id ="mi" type="radio" name="valor" value="Alto"><br>
+        
+                <label for="in">Normal , me parece igual de interesante que los demas</label>
+                <input id="in" type="radio" name="valor"
+                value="Medio"><br>
+        
+                <label for="ni">No es nada interesante</label>
+                <input id="ni" type="radio" name="valor" 
+                value="Bajo"><br>
+                </p>
+                </fieldset>
+        
+        
+                <input type="submit" value="Enviar">
+        
+                </form>
+   
+</body>
+</html>
